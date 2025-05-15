@@ -11,6 +11,7 @@ This repository contains research work combining ns-3 network simulator with Mac
 * Reproducible Experiments: Scripts and configurations for reproducing results
 
 ## Project Structure
+```text
 ns3-mlpl-research/
 ├── src/                    # Source code
 │   ├── modules/           # ns-3 modules
@@ -33,7 +34,7 @@ ns3-mlpl-research/
 │   └── logs/          # Execution logs
 ├── config/             # Configuration files
 └── tests/              # Unit and integration tests
-
+```
 
 ## Prerequisites
 * ns-3 Simulator (version 3.x or later)
