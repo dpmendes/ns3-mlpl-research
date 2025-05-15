@@ -172,3 +172,169 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ns-3 specific files
+build/
+waf
+waf.bat
+waf-1.*
+waf-2.*
+.waf3*
+.waf-*
+.lock-waf*
+.wafpickle-*
+doc/html/
+doc/xml/
+doc/latex/
+doc/man/
+scratch/
+*.pyc
+*.pyo
+__pycache__/
+*.log
+*.pcap
+*.tr
+*.txt
+*.dat
+
+# Python files
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Machine Learning / Data Science
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.model
+*.weights
+models/
+checkpoints/
+tensorboard_logs/
+mlruns/
+.mlflow/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyTorch
+*.pth
+*.pth.tar
+
+# TensorFlow
+*.ckpt
+*.ckpt.data*
+*.ckpt.index
+*.pb
+*.tflite
+saved_model/
+
+# Data files
+*.csv
+*.json
+*.xml
+*.yaml
+*.yml
+!config/*.yml
+!config/*.yaml
+data/raw/
+data/processed/
+*.mat
+*.npz
+*.npy
+
+# Results and outputs
+results/
+output/
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.svg
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.cproject
+.settings/
+
+# C/C++ specific
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*~
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
