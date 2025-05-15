@@ -45,37 +45,37 @@ ns3-mlpl-research/
 ## Installation
 1. Clone the repository:
 
-```bash
+```sh
 git clone https://github.com/your-username/ns3-mlpl-research.git
 cd ns3-mlpl-research
 ```
 
 2. Set up Python environment:
 
-```bash
+```sh
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 3. Build the project:
-```bash
+```sh
 ./scripts/build/build.sh
 ```
 
 ## Quick Start
 1. Run a basic example:
-```bash
+```sh
 python src/examples/basic_mlpl_example.py
 ```
 
 2. Execute a simulation:
-```bash
+```sh
 ./scripts/experiments/run_simulation.sh config/basic_config.yaml
 ```
 
 3. Analyze results:
-```bash
+```sh
 python scripts/analysis/analyze_results.py results/latest/
 ```
 
@@ -83,7 +83,7 @@ python scripts/analysis/analyze_results.py results/latest/
 ### Running Simulations
 To run a simulation with ML-enhanced PHY layer:
 
-```bash
+```sh
 # Basic usage
 python -m mlpl_sim --config config/simulation.yaml
 
