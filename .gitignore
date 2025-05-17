@@ -194,7 +194,9 @@ __pycache__/
 *.log
 *.pcap
 *.tr
-*.txt
+# *.txt  # Removed to allow requirements.txt and other important text files
+results/*.txt
+scratch/*.txt
 *.dat
 
 # Python files
