@@ -1,79 +1,77 @@
-# Core dependencies
-numpy>=1.20.0
-scipy>=1.7.0
-matplotlib>=3.4.0
-pandas>=1.3.0
+# requirements.txt - Python dependencies for ns-3 + MLPL research project
+# Core ns-3 Python bindings and simulation support
 
-# Machine Learning libraries
-scikit-learn>=1.0.0
-tensorflow>=2.8.0
-torch>=1.10.0
-torchvision>=0.11.0
+# Scientific Computing and Data Analysis
+numpy>=1.21.0,<2.0.0
+scipy>=1.7.0,<2.0.0
+pandas>=1.3.0,<3.0.0
+matplotlib>=3.4.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
 
-# Neural Network specific
-keras>=2.8.0
-tensorboard>=2.8.0
+# Machine Learning and Deep Learning
+scikit-learn>=1.0.0,<2.0.0
+tensorflow>=2.8.0,<3.0.0
+torch>=1.12.0,<3.0.0
+torchvision>=0.13.0,<1.0.0
+xgboost>=1.5.0,<3.0.0
 
-# Signal processing
-spectrum>=0.8.0
-pywavelets>=1.2.0
+# Network Analysis and Graph Processing
+networkx>=2.6.0,<4.0.0
+igraph>=0.9.0,<1.0.0
 
-# Communication systems
-commpy>=0.6.0
+# Data Processing and I/O
+h5py>=3.6.0,<4.0.0
+# pytables>=3.7.0,<4.0.0  # Commented out - requires system HDF5 libraries
+pyarrow>=6.0.0,<15.0.0
+openpyxl>=3.0.0,<4.0.0
 
-# Network simulation auxiliary tools
-networkx>=2.6.0
-ns3-python-bindings>=3.35.0
+# Configuration and Logging
+pyyaml>=6.0.0,<7.0.0
+configparser>=5.2.0,<6.0.0
+logging-config>=1.0.3,<2.0.0
 
-# Visualization
-seaborn>=0.11.0
-plotly>=5.5.0
-bokeh>=2.4.0
+# Progress Bars and CLI
+tqdm>=4.62.0,<5.0.0
+click>=8.0.0,<9.0.0
+rich>=12.0.0,<14.0.0
 
-# Data processing
-h5py>=3.6.0
-protobuf>=3.19.0
-pyarrow>=7.0.0
+# Statistical Analysis
+statsmodels>=0.13.0,<1.0.0
+pingouin>=0.5.0,<1.0.0
 
-# Utilities
-tqdm>=4.62.0
-pyyaml>=6.0
-click>=8.0.0
-joblib>=1.1.0
-dill>=0.3.4
+# Visualization Extensions
+plotly>=5.0.0,<6.0.0
+bokeh>=2.4.0,<4.0.0
 
-# Development tools
-pytest>=6.2.5
-pytest-cov>=2.12.0
-pylint>=2.12.0
-black>=22.1.0
-isort>=5.10.0
+# Memory Profiling and Performance
+memory-profiler>=0.60.0,<1.0.0
+psutil>=5.8.0,<6.0.0
+
+# Jupyter and Development Tools
+jupyter>=1.0.0,<2.0.0
+jupyterlab>=3.0.0,<5.0.0
+ipywidgets>=7.6.0,<9.0.0
+
+# Testing and Code Quality
+pytest>=7.0.0,<9.0.0
+pytest-cov>=4.0.0,<5.0.0
+black>=22.0.0,<25.0.0
+flake8>=4.0.0,<8.0.0
+mypy>=0.991,<2.0.0
 
 # Documentation
-sphinx>=4.4.0
-sphinx-rtd-theme>=1.0.0
-nbsphinx>=0.8.8
-myst-parser>=0.16.0
+sphinx>=4.0.0,<8.0.0
+sphinx-rtd-theme>=1.0.0,<3.0.0
 
-# Jupyter environment
-jupyter>=1.0.0
-ipykernel>=6.9.0
-ipywidgets>=7.6.0
+# Optional: GPU acceleration for deep learning (uncomment if using CUDA)
+# tensorflow-gpu>=2.8.0,<3.0.0
 
-# Experiment tracking
-mlflow>=1.24.0
-wandb>=0.12.10
+# Optional: Distributed computing (uncomment if needed)
+# dask[complete]>=2022.0.0,<2025.0.0
+# ray[default]>=2.0.0,<3.0.0
 
-# API and interoperability
-grpcio>=1.44.0
-fastapi>=0.75.0
-uvicorn>=0.17.0
-httpx>=0.22.0
-
-# Optimizers
-optuna>=2.10.0
-bayesian-optimization>=1.2.0
-
-# Performance
-numba>=0.55.0
-dask>=2022.2.0
+# ns-3 specific Python utilities
+# Note: ns-3 Python bindings are typically built during ns-3 compilation
+# These packages support ns-3 data analysis and visualization
+lxml>=4.6.0,<6.0.0
+xmltodict>=0.12.0,<1.0.
