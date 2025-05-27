@@ -59,7 +59,98 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Build the project:
+3. Install ns-3:
+
+3.1. Install dependencies:
+
+```sh
+# Update package list
+sudo apt update
+
+# Install essential build tools and dependencies
+sudo apt install -y \
+    build-essential \
+    cmake \
+    git \
+    python3-dev \
+    python3-pip \
+    libgsl-dev \
+    libgtk-3-dev \
+    libxml2-dev \
+    sqlite3 \
+    libsqlite3-dev \
+    qtbase5-dev \
+    qtchooser \
+    qt5-qmake \
+    qtbase5-dev-tools \
+    mercurial \
+    bzr
+```
+
+3.2. Download and decompress ns-3
+
+```sh
+# Navigate to your workspace (or wherever you want ns-3)
+cd ~/
+
+# Download ns-3 (using the latest stable version)
+wget https://www.nsnam.org/releases/ns-allinone-3.41.tar.bz2
+
+# Extract the archive
+tar -xjf ns-allinone-3.41.tar.bz2
+
+# Navigate to the ns-3 directory
+cd ns-allinone-3.41/ns-3.41
+```
+
+
+3.3. Configure and build
+
+```sh
+# Configure ns-3 with Python bindings enabled
+./ns3 configure --enable-examples --enable-tests
+
+# Build ns-3 (this will take several minutes)
+./ns3 build
+```
+
+
+3.4. Test the installation
+
+```sh
+# Run a simple test to verify everything works
+./ns3 run hello-simulator
+
+# If that works, try a more complex example
+./ns3 run first
+```
+
+
+3.5. Set up environment
+
+```sh
+# Add to your ~/.bashrc for permanent setup
+echo 'export NS3_HOME=~/ns-allinone-3.41/ns-3.41' >> ~/.bashrc
+echo 'export PYTHONPATH=$PYTHONPATH:$NS3_HOME/build/bindings/python' >> ~/.bashrc
+source ~/.bashrc
+```
+
+3.6. Verification commands
+
+```sh
+# List available examples
+./ns3 run --list
+
+# Run the WiFi example
+./ns3 run wifi-simple-adhoc
+
+# Check if Python bindings work
+python3 -c "import ns3; print('ns-3 Python bindings work!')"
+```
+
+
+
+4. Build the project:
 ```sh
 ./scripts/build/build.sh
 ```
