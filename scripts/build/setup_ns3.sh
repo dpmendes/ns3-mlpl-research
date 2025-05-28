@@ -5,10 +5,3 @@ if [ ! -f "build/config.status" ]; then
     ./ns3 configure --enable-examples --enable-tests
 fi
 ./ns3 "$@"
-
-# Make it executable
-chmod +x ~/setup_ns3.sh
-
-# Create a simpler alias
-echo 'alias ns3="~/setup_ns3.sh"' >> ~/.bashrc
-source ~/.bashrc
