@@ -74,4 +74,4 @@ sphinx-rtd-theme>=1.0.0,<3.0.0
 # Note: ns-3 Python bindings are typically built during ns-3 compilation
 # These packages support ns-3 data analysis and visualization
 lxml>=4.6.0,<6.0.0
-xmltodict>=0.12.0,<1.0.
+xmltodict>=0.12.0,<1.0.0
